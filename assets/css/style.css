@@ -1,0 +1,358 @@
+body {
+  overflow-x: hidden;
+ font-family: 'Montserrat', sans-serif;
+ 
+}
+
+.intro-section {
+  padding-top: 70px
+}
+
+main {
+ background: url(../img/bg.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+/* scroll down button */
+/* 
+#section08 a {
+  padding-top: 60px;
+}
+#section08 a span {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  box-sizing: border-box;
+  z-index: 99999;
+}
+#section08 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #000;
+  border-radius: 100%;
+  box-sizing: border-box;
+  z-index: 99999;
+} */
+
+
+
+
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99999;
+
+}
+
+
+.hero a, .hero a .mouse, a .arrow {
+  cursor: pointer !important;
+  text-decoration: none;
+  color: #828282;
+  font-size: 14px;
+}
+
+.mouse {
+  width: 19px;
+  height: 35.96px;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+  display: flex;
+  z-index: 99999;
+}
+
+.mouse span {
+  width: 5px;
+  height: 5px;
+  background-color: #828282;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  z-index: 99999;
+  animation: move-wheel 1s linear infinite;
+}
+
+.arrow span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid transparent;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  z-index: 99999;
+  transform: rotate(45deg);
+  animation: arrow-down .5s alternate infinite;
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+*:focus {
+  outline: none !important;
+}
+
+
+.navbar {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: 0.1rem;
+  /* background: transparent !important; */
+  height: 72px;
+  color: #000000 !important;
+}
+
+.navbar-brand {
+  font-size: 23px;
+  color: #000000 !important;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000000;
+  padding-top: 0.8rem;
+  font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+.phone-bounce {
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+     animation-duration: 2s !important;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  color: #05929B;
+  margin-top: 150px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.hair-display {
+  margin-bottom: 30px;
+}
+
+.m-50 {
+  margin-top: 60px;
+}
+
+.subscribe {
+  margin-top: 100px;
+}
+
+.subscribe input {
+  width: 400px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #05929B;
+  border-radius: 5px;
+}
+
+.btn-sub {
+  background: #05929B;
+  border-radius: 5px;
+  height: 50px;
+  color: #fff;
+  padding: 14px 35px;
+}
+
+.btn-sub:hover {
+  color: #fff;
+}
+
+.hero img {
+  height: 250px;
+}
+
+.hero img:hover {
+  transform: scale(1.2);
+  transition: all 2s ease-in;
+}
+
+
+#intro {
+  margin: 200px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-title h3{
+  color: #065860;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-title p {
+  width: 60%;
+  margin: 0 auto;
+}
+.product img {
+  height: 400px;
+}
+
+.product {
+  text-align: center;
+}
+
+.importance {
+  margin-top: 100px;
+}
+
+.importance p {
+  font-size: 22px;
+}
+
+footer {
+  color: #fff;
+  background: #05929B;
+  height: 60px;
+  padding: 20px 0;
+}
+
+
+/* owl slider */
+.wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.item {
+    height: 600px;
+    /* padding: 0 150px ; */
+}
+
+.item .screen-container {
+  padding: 0 150px ;
+}
+
+.screen-container img {
+    text-align: center;
+    height: 500px;
+    width: 250px !important;
+}
+
+.item .screen-desc {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.owl-dots {
+    display: none;
+}
+
+
+/* media queries */
+
+@media (max-width: 767px){
+.subscribe input {
+  max-width: 100%;
+  width: 100%;
+}
+
+.subscribe button {
+  width: 60%;
+}
+
+.email-capture {
+  flex-direction: column;
+}
+
+.hero {
+  height: 1600px;
+}
+
+.hero-title {
+  margin-top: 50px;
+}
+
+.hair-display {
+  margin-top: 40px;
+}
+
+.scroll-down {
+  display: none;
+}
+
+.m-50 {
+  margin-top: 0;
+}
+
+.section-title p {
+  width: 100%;
+}
+
+
+/* slider */
+
+.item .screen-container {
+  padding: 0 40px ;
+}
+
+.item .screen-desc {
+  width: 100%;
+}
+ 
+
+}
