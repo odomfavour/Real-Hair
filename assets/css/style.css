@@ -9,7 +9,7 @@ body {
 }
 
 main {
- background: url(../img/bg.svg);
+ background: url(../img/background.png);
   background-position: center;
   background-size: cover;
 }
@@ -20,38 +20,6 @@ main {
 }
 
 /* scroll down button */
-/* 
-#section08 a {
-  padding-top: 60px;
-}
-#section08 a span {
-  position: absolute;
-  top: 600px;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #000;
-  border-radius: 50px;
-  box-sizing: border-box;
-  z-index: 99999;
-}
-#section08 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #000;
-  border-radius: 100%;
-  box-sizing: border-box;
-  z-index: 99999;
-} */
-
-
-
 
 .scroll-down {
   position: absolute;
@@ -135,10 +103,7 @@ main {
   }
 }
 
-*:focus {
-  outline: none !important;
-}
-
+/* navbar */
 
 .navbar {
   text-transform: capitalize;
@@ -342,6 +307,16 @@ footer {
 .section-title p {
   width: 100%;
 }
+
+/* bouncing phone */
+.importance {
+  margin: 30px 0;
+}
+
+#intro {
+  margin-bottom: 40px;
+}
+
 
 
 /* slider */

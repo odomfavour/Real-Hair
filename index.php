@@ -46,7 +46,6 @@ if (mysqli_query($conn, $sql)){
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap"
         rel="stylesheet">
 
@@ -58,7 +57,7 @@ if (mysqli_query($conn, $sql)){
         <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div class="container">
-        <a href="#" class="navbar-brand"><img src="assets/img/rh.svg" alt="" class="img-fluid"></a>
+        <a href="#" class="navbar-brand"><img src="assets/img/rh.png" alt="" class="img-fluid"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,11 +81,6 @@ if (mysqli_query($conn, $sql)){
         <div class="hero">
             
             <div class="container">
-                <!-- <section id="section08" class="demo">
-                    <h1>Scroll Down Button #8</h1>
-                    <a href="#section09"><span></span>Scroll</a>
-                </section> -->
-
                 <a href="#prototype" class="scroll-down" style="cursor:pointer;">
                         <div class="mouse">
                             <span></span>
@@ -110,15 +104,15 @@ if (mysqli_query($conn, $sql)){
                                     <div class="form-group mr-2 wow fadeInLeft">
                                         <input type="email" class="form-control" name="email" placeholder="Enter your email">
                                     </div>
-                                    <div class="text-center wow fadeInRight">
+                                    <div class="text-right wow fadeInRight">
                                         <button name="submit" type="submit" class="btn btn-sub">Submit</button>
                                     </div>
                                     
                                 </div>
-                                <div style="color:red;" class="message">
+                                <div style="color:red;" class="message mt-3">
                                     <?php echo $emailErr;?>
                                 </div>
-                                <div style="color:green;" class="message">
+                                <div style="color:green;" class="message mt-3">
                                     <?php echo $emailsuc; ?>
                                 </div>
             
@@ -284,10 +278,6 @@ if (mysqli_query($conn, $sql)){
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/owl.js"></script>
